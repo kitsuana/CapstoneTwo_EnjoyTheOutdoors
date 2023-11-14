@@ -1,3 +1,5 @@
+export{parkTypesArray};
+
 const parkTypesArray = [
     "National Park",
     "National Monument",

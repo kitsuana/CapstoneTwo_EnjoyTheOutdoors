@@ -1,3 +1,5 @@
+export{nationalParksArray};
+
 const nationalParksArray = [
     {
     LocationID: "ABLI",
@@ -6858,19 +6860,3 @@ const nationalParksArray = [
     }
     }
 ]
-
-
-window.onload = ()=>{
-    ;
-}
-
-    
-// How to select different search options? Radio buttons or dropdown?
-    // search by location
-        // select state or territory from dropdown - locationData.js
-            // park's "State" property
-
-    // search by park type
-        // select park type from dropdown - parkTypeData.js
-            // "LocationName" contains the description
-                // .toLowerCase both strings to match
