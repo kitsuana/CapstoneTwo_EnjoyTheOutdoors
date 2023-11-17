@@ -63,16 +63,10 @@ function populateTypeDropdown(){
 
 function displayPark(park){
     
-    let parkTitle = document.createElement("h2");
-    parkTitle.innerHTML = `${park.LocationName}`
-    parkPlaceholder.appendChild(parkTitle);
-    
-    let parkDescription = document.createElement("p");
-    parkDescription.innerHTML = `<h5>Location:</h5>
-    <p>${park.City}, ${park.State}<p> <hr/>`;
-    parkPlaceholder.appendChild(parkDescription);
-
-    
+    parkPlaceholder.innerHTML += `
+    <h2>${park.LocationName}</h2>
+    <h5>Location:</h5>
+    <p>${park.City}, ${park.State}</p> <hr/>`;
 
     scrollIndicator();
 }

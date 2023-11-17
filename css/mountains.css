@@ -1,0 +1,55 @@
+body, html {
+    height: 100%;
+    background-color: #2d3813;
+}
+
+.hero-image {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+        ), url("../images/zion-national-park-mountains.jpeg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: #2d3813;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f1ece6;
+    backdrop-filter: blur(5px);
+    background-color: #26330359;
+    padding: 5px;
+    max-width: 720px;
+}
+
+nav, #mt-div {
+    backdrop-filter: blur(10px);
+    background-color: #26330359;
+}
+
+.nav-link, .navbar-brand {
+    color: #f1ece6;
+    padding: 7px, 14px;
+}
+
+.active, .navbar-toggler{
+    color: #746c62;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+    color: #678f4c;
+}
+
+
+#mt-div {
+    top: 70%;
+    padding-top: 15px;
+    /* visibility: hidden; */
+}
