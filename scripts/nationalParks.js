@@ -7,6 +7,7 @@ import { nationalParksArray } from "./nationalParkData.js";
 let locationDropdownEl = document.getElementById("park-location-dropdown");
 let parkTypeDropdownEl = document.getElementById("park-type-dropdown");
 let parkPlaceholder = document.getElementById("park-placeholder");
+let parkListBtn = document.getElementById("park-list-btn")
 
 window.onload = ()=>{
 
@@ -39,6 +40,11 @@ window.onload = ()=>{
         }
     }
 
+    parkListBtn.onclick = () => {
+        for(let nationalPark of nationalParksArray){
+            displayPark(nationalPark);
+        }
+    }
 }
 
 function populateLocationDropdown(){

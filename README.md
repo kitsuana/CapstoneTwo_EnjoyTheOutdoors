@@ -66,4 +66,3 @@ The search page has a CSS animation that displays to notify the user to scroll. 
 }
 ```
 
-<video src="images/search-page-scroll.mp4" controls title="Title"></video>

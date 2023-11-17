@@ -64,6 +64,17 @@ nav {
     width: 220px;
 }
 
+.btn-light {
+    background-color: #746c62;
+    color: #f1ece6;
+    border: none;
+}
+
+.btn-light:hover {
+    background-color: #678f4c;
+    color: #f1ece6;
+}
+
 #scroll-text{
     top: 90%;
     opacity: 0;
