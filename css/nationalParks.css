@@ -24,10 +24,14 @@ body, html {
     transform: translate(-50%, -50%);
     color: #f1ece6;
     padding: 10px;
-    backdrop-filter: blur(5px);
-    background-color: #26330359;
     max-width: 720px;
 }
+
+.hero-text.container {
+    backdrop-filter: blur(5px);
+    background-color: #26330359;
+}
+
 select {
     width: 191px;
 }

@@ -68,6 +68,23 @@ function displayPark(park){
     <h5>Location:</h5>
     <p>${park.City}, ${park.State}</p> <hr/>`;
 
+    // adding park cards template 
+    // <div class="container card" id="park-placeholder">
+    //         <div class="row row-cols-1 row-cols-md-2 g-4"></div>
+    // 
+
+    //     <div class="card h-100 text-bg-light">
+    //         <img src="..." class="card-img-top" alt="...">
+    //         <div class="card-body">
+    //           <h4 class="card-title">Card title</h4>
+    //           <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+    //           <p class="card-text">Some quick example text.</p>
+    //           <a href="#" class="btn btn-primary">Visit Site</a>
+    //         </div>
+    //     </div> 
+
+    // </div>
+
     scrollIndicator();
 }
 
