@@ -54,7 +54,7 @@ nav {
 
 
 #or-search:after, #or-search:before {
-    content: "\000a0\000a0\000a0\000a0";
+    content: "\000a0\000a0\000a0\000a0\000a0\000a0";
     text-decoration: line-through;
     vertical-align: text-top;
 

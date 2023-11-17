@@ -1,14 +1,3 @@
-    
-// How to select different search options? Radio buttons or dropdown?
-    // search by location
-        // select state or territory from dropdown - locationData.js
-            // park's "State" property
-
-    // search by park type
-        // select park type from dropdown - parkTypeData.js
-            // "LocationName" contains the description
-                // .toLowerCase both strings to match
-
 
 import { locationsArray } from "./locationData.js";
 import { parkTypesArray } from "./parkTypeData.js";
@@ -25,7 +14,7 @@ window.onload = ()=>{
     populateTypeDropdown();
 
     locationDropdownEl.onchange = () => {
-        console.log(locationDropdownEl.value);
+
         parkPlaceholder.innerHTML = "";
         parkTypeDropdownEl.selectedIndex = 0
 
@@ -38,7 +27,7 @@ window.onload = ()=>{
     }
 
     parkTypeDropdownEl.onchange = () => {
-        console.log(parkTypeDropdownEl.value);
+
         parkPlaceholder.innerHTML = "";
         locationDropdownEl.selectedIndex = 0
 
