@@ -23,6 +23,15 @@ The National Parks search page provides a simple user interface with two search 
 </p>
 
 
+## Mountains Search Page
+
+The Mountains search page provides a simple user interface with a search options that allow users to find the mountain perfect for them.
+
+<p align="center" width="100%">
+    <img width="90%" src="images/mtn-page.png" /> 
+</p>
+
+
 ### Responsive Design
 
 Both the Home Page and National Park Search Page are responsive through the use of Bootstrap 5
