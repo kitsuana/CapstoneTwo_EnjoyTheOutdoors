@@ -26,19 +26,28 @@ window.onload = ()=>{
 
     locationDropdownEl.onchange = () => {
         console.log(locationDropdownEl.value);
+        parkPlaceholder.innerHTML = "";
+        parkTypeDropdownEl.selectedIndex = 0
+
+
+        for(let nationalPark of nationalParksArray){
+            if(nationalPark.State === locationDropdownEl.value){
+                displayPark(nationalPark);
+            }
+        }
     }
 
     parkTypeDropdownEl.onchange = () => {
         console.log(parkTypeDropdownEl.value);
-        
-        let parks = [];
+        parkPlaceholder.innerHTML = "";
+        locationDropdownEl.selectedIndex = 0
+
 
         for(let nationalPark of nationalParksArray){
             if(nationalPark.LocationName.includes(parkTypeDropdownEl.value)){
-                parks.push(nationalPark);
+                displayPark(nationalPark);
             }
         }
-        console.log(parks);
     }
 
 }
@@ -59,4 +68,21 @@ function populateTypeDropdown(){
 
 function displayPark(park){
     
+    let parkTitle = document.createElement("h2");
+    parkTitle.innerHTML = `${park.LocationName}`
+    parkPlaceholder.appendChild(parkTitle);
+    
+    let parkDescription = document.createElement("p");
+    parkDescription.innerHTML = `<h5>Location:</h5>
+    <p>${park.City}, ${park.State}<p> <hr/>`;
+    parkPlaceholder.appendChild(parkDescription);
+
+    
+
+    scrollIndicator();
+}
+
+function scrollIndicator(){
+    let scrollHeroText = document.getElementById("scroll-text");
+        scrollHeroText.classList.add("scroll-down");
 }

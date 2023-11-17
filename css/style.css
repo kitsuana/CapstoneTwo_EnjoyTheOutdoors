@@ -1,0 +1,56 @@
+body, html {
+    height: 100%;
+    background-color: #2d3813;
+}
+
+.hero-image {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+        ), url("../images/Arches-National-Park-twilight-desert.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: darkslategray;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f1ece6;
+}
+
+nav {
+    backdrop-filter: blur(10px);
+    background-color: #26330359;
+}
+
+.nav-link, .navbar-brand {
+    color: #f1ece6;
+    padding: 7px, 14px;
+}
+
+.active{
+    color: #746c62;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+    color: #678f4c;
+}
+
+.navbar-toggler{
+    border-color: #746c62;
+}
+
+#info-text {
+    top: 90%;
+    backdrop-filter: blur(5px);
+    background-color: #26330359;
+    font-style: italic;
+    padding: 5px;
+}
